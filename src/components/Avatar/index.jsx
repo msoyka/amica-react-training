@@ -16,9 +16,13 @@ const Wrapper = styled.figure`
 `;
 
 const Avatar = ({ src = icon, alt = "Avatar Icon" }) => {
+  function addDefaultSrc(ev) {
+    ev.target.src = icon;
+  }
+
   return (
     <Wrapper>
-      <img src={src} alt={alt} />
+      <img src={src} alt={alt} onError={addDefaultSrc} />
     </Wrapper>
   );
 };
