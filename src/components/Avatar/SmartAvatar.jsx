@@ -3,14 +3,6 @@ import Avatar from "./index";
 import fetchGithubAvatar from "./fetchGithubAvatar";
 
 class SmartAvatar extends React.Component {
-  // Note: No longer needed to create constructor
-  // Read More: https://hackernoon.com/the-constructor-is-dead-long-live-the-constructor-c10871bea599
-
-  // constructor(props) {
-  //   super(props);
-  //   this.state = { avatar: {} };
-  // }
-
   state = { avatar: {} };
 
   async componentDidMount() {
