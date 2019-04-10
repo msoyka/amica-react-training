@@ -15,16 +15,6 @@ const Wrapper = styled.figure`
   }
 `;
 
-// ES5 Function
-// function Avatar({ src = icon, alt = "Avatar Icon" }) {
-//   return (
-//     <Wrapper>
-//       <img src={src} alt={alt} />
-//     </Wrapper>
-//   );
-// }
-
-// ES6 Arrow Function
 const Avatar = ({ src = icon, alt = "Avatar Icon" }) => {
   return (
     <Wrapper>
