@@ -1,8 +1,8 @@
 import React from "react";
+import icon from "./avatar.svg";
 
 // ES5 Function
-// function Avatar(props) {
-//   const { src, alt } = props;
+// function Avatar({ src = icon, alt = "Avatar Icon" }) {
 //   return (
 //     <div>
 //       <img src={src} alt={alt} />
@@ -11,8 +11,7 @@ import React from "react";
 // }
 
 // ES6 Arrow Function
-const Avatar = props => {
-  const { src, alt } = props;
+const Avatar = ({ src = icon, alt = "Avatar Icon" }) => {
   return (
     <div>
       <img src={src} alt={alt} />
