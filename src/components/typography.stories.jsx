@@ -1,6 +1,3 @@
-// 💥TO DO: Add own custom props where "propName" is currently located.
-// You can add more than one prop if you want.
-//
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { H1, SubH1 } from "./Typography";
