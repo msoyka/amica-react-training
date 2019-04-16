@@ -1,3 +1,10 @@
+// ==========================================================================================
+// 🎯To Do: Pull out common styles to reduce repetitive code.
+// ✅ Put all common styles into a const named "headingStyles"
+// 💰TIPS: Utilize new import statement => import styled, { css } from "styled-components";
+// 💰STARTER TEMPLATE: const headingStyles = css``;
+// ==========================================================================================
+
 import styled from "styled-components";
 
 export const H1 = styled.h1`
