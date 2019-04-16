@@ -71,3 +71,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - `mod-2-1-start`: Create heading functional component
 - `mod-2-2-start`: Transform heading functional component into styled-component wrapper
 - `mod-2-3-start`: Create multiple exports for heading, subheading.
+- `mod-2-4-start`: Setup abstract common heading styles.
