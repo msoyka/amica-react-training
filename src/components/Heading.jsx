@@ -1,3 +1,13 @@
+// ================================================================================================
+// 🎯 To Do: Create a centralized location for all typography styled-component's.
+// ✅ Rename Heading.jsx file to Typography.jsx
+// ✅ Rename heading.stories.jsx file to typography.stories.jsx
+// ✅ Create H1 & SubH1 styled components.
+
+// 💰 Tips: Need to export each component.
+// 💰 Link: https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export
+// ================================================================================================
+
 import styled from "styled-components";
 
 const Heading = styled.h1`
