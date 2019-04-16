@@ -65,3 +65,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - `mod-1-2-start`: Style your first component
 - `mod-1-3-start`: Create SmartAvatar component
 - `mod-1-4-start`: Create Avatar H.O.C.
+
+**Module 2: Continue with React components**
+
+- `mod-2-1-start`: Create heading functional component
+- `mod-2-2-start`: Transform heading functional component into styled-component wrapper
