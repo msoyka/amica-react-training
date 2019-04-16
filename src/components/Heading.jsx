@@ -1,13 +1,13 @@
-import * as React from "react";
-import styled from "styled-components";
+// ================================================================================================
+// 🎯To Do: Create a "Heading" react component that when consumed, renders the content
+// within the component's tags to look like the design.
+//
+// 💰Tip: Designs and Specs are in the './_designs' directory.
+// ================================================================================================
 
-const H1 = styled.h1`
-  font-family: Avenir, Arial, sans-serif;
-  font-size: 2.625rem;
-  font-weight: 600;
-  line-height: 1.19;
-`;
+// import * as React from "react";
+// import styled from "styled-components";
 
-const Heading = ({ children }) => <H1>{children}</H1>;
+// const Heading = () => {};
 
-export default Heading;
+// export default Heading;
