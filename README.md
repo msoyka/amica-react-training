@@ -73,6 +73,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - `mod-2-3-start`: Create multiple exports for heading, subheading.
 - `mod-2-4-start`: Setup abstract common heading styles.
 - `mod-2-5-start`: Using styled-components props.
+<<<<<<< HEAD
 
 **Module 3: React Component Patterns**
 
@@ -81,3 +82,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - `mod-3-3-start`: Styled components
 - `mod-3-4-start`: Conditional Rendering
 - `mod-2-assignment-start`: Create a reusable Card component using other reusable components.
+=======
+>>>>>>> Updated Readme
