@@ -65,3 +65,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - `mod-1-2-start`: Style your first component
 - `mod-1-3-start`: Create SmartAvatar component
 - `mod-1-4-start`: Create Avatar H.O.C.
+
+**Module 2: Continue with React components**
+
+- `mod-2-1-start`: Create heading functional component
+- `mod-2-2-start`: Transform heading functional component into styled-component wrapper
+- `mod-2-3-start`: Create multiple exports for heading, subheading.
+- `mod-2-4-start`: Setup abstract common heading styles.
+- `mod-2-5-start`: Using styled-components props.
+- `mod-2-assignment-start`: Create a reusable Card component using other reusable components.
