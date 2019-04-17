@@ -1,3 +1,9 @@
+// 💥TO DO: Pass props to H1 & SubH1 to adapt styles to account for the passed props.
+//
+// 🔗Resource Links
+// [link] https://www.styled-components.com/docs/basics#passed-props
+// [link] https://www.styled-components.com/docs/basics#adapting-based-on-props
+
 import styled, { css } from "styled-components";
 
 const headingStyles = css`
