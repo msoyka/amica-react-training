@@ -1,25 +1,27 @@
-// 💥TO DO: Pass props to H1 & SubH1 to adapt styles to account for the passed props.
-//
-// 🔗Resource Links
-// [link] https://www.styled-components.com/docs/basics#passed-props
-// [link] https://www.styled-components.com/docs/basics#adapting-based-on-props
-
 import styled, { css } from "styled-components";
 
 const headingStyles = css`
-  font-family: Avenir, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 `;
 
 export const H1 = styled.h1`
   ${headingStyles}
-  font-size: 2.625rem;
-  font-weight: 600;
-  line-height: 1.19;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: 0em;
+  color: ${props => (props.primary ? "green" : "palevioletred")};
+  font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : 400)};
 `;
 
 export const SubH1 = styled.span`
   ${headingStyles}
-  font-size: 1.5rem;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.46429em;
+  ${({ borderColor }) =>
+    borderColor && `border-bottom: 1px solid ${borderColor};`}
+  ${({ shadow }) => shadow && `text-shadow: 1px 1px 0 #444;`}
+  letter-spacing: ${({ spacing }) => (spacing ? spacing : "normal")};
 `;
