@@ -1,16 +1,26 @@
 🎯To Do: Create a <Card /> component that utilizes the reusable components (i.e. heading, subheading, button, paragraph, etc.). The Card component & storybook files has been created for you.
 
 💥Tasks:
-✅Create & style Heading component
-✅Create & style SubHeading component
-✅Create & style Button component
+✅Create & style Heading component (completed in training)
+✅Create & style SubHeading component (completed in training)
+✅Create & style Button component.
 ✅Create & style Card component
 
-🗒Note: Create & style as many variations of a Card component that you can. There are multiple ways to accomplish this task. I came up with 3. Use the "Research Links" below to help.
+💥Card Component Pattern Types:
+✅ Create Card component using basic Props & conditional rendering.
+✅ Create Card component using Render Props & conditional rendering.
+✅ Create Card component using styled-components & conditional rendering.
 
+🗒Note: Complete all three Card component pattern types listed above.
+🗒Note: Use the "Research Links" below to help.
 🗒Note: The final card component should look like "Card.png" and function like the "DEMO" link below.
 
 💻[demo] https://csb-z2j42ljwp.netlify.com/
+
+🤖Terms:
+
+- Conditional Rendering: Use JavaScript conditional operators, like "if else", to render components conditionally.
+- Render Props: The term “render prop” refers to a technique for sharing code between React components using a prop whose value is a function.
 
 🔗Research Links
 [links] https://reactpatterns.com/
