@@ -5,7 +5,9 @@
 // ✅ Create H1 & SubH1 styled components.
 
 // 💰 Tips: Need to export each component.
+// 💰 Tips: No longer need default export.
 // 💰 Link: https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export
+// 💰 Link: https://www.geeksforgeeks.org/reactjs-importing-exporting/
 // ================================================================================================
 
 import styled from "styled-components";
