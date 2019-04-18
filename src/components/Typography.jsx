@@ -13,6 +13,7 @@ export const H1 = styled.h1`
 
 export const SubH1 = styled.span`
   ${headingStyles}
+  display: block;
   font-size: 1.5rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
