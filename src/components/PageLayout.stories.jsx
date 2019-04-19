@@ -1,26 +1,28 @@
-// ====================================================================================
-// 💥TO DO: Update the PageLayout props to pass string values.
-// ====================================================================================
+// =================================================================================================
+// 💥TO DO: Update the PageLayout props to pass React component values.
+//
+// NOTES:
+// - Create Title component that takes in a name prop and pass to PageLayout via header prop
+// - Create Body component that takes in a name prop and pass to PageLayout via body prop
+// - Use the {H1, SubH1} components within the Title and Body components
+//
+// START COMPONENTS:
+// const Title = () => {};
+// const Body = () => {};
+// =================================================================================================
 
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import PageLayout from "./PageLayout";
-import { H1, SubH1 } from "./Typography";
 
-const Title = ({ name }) => <H1>Welcome to Amica, {name}</H1>;
-
-const Body = () => (
-  <SubH1>
-    Amica Mutual Insurance Company is a Rhode Island-based mutual insurance
-    company that offers auto, home and life insurance. Amica was founded in 1907
-    by A.T. Vigneron and originally offered auto, fire and theft insurance.
-  </SubH1>
-);
+const name = "Matt";
 
 storiesOf("Page Layout", module)
   .add("No Header or Body", () => <PageLayout />)
-  .add("With Header", () => <PageLayout header={<Title name="Matt" />} />)
-  .add("With Body", () => <PageLayout body={Body} />)
+  .add("With Header", () => <PageLayout header={`Welcome ${name}`} />)
+  .add("With Body", () => (
+    <PageLayout body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+  ))
   .add("With Header & Body", () => (
-    <PageLayout header={<Title name="Matt" />} body={Body} />
+    <PageLayout header={`Welcome ${name}`} body="This is your profile." />
   ));
