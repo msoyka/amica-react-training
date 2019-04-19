@@ -1,23 +1,11 @@
-// ==========================================================================================================
-// 💥TO DO: Utilize as many of the conditional syntax examples below in
-//          order make the PageLayout less prone to runtime errors.
-//
-// 🗒 POPULAR CONDITIONAL SYNTAX EXAMPLES
-// ✅ if/else: if (header) {} else {}
-// ✅ ternary: header ? : ;
-// ✅ Logical AND Operator: true && 'Dog'
-// ✅ Logical OR Operator: false || 'Cat'
-// ✅ Double NOT (!!): !!true
-//
-// 💻 RESOURCES
-// 🔗 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators
-//
-// 💰TIP: Styling has been done for you!
-// 💰TIP: Use the default components for graceful degradation.
-// ==========================================================================================================
+// ============================================================
+// 💥TO DO: Change the passed props from boolean to string,
+//          and render the props in the component.
+// ============================================================
 
 import React from "react";
 import styled from "styled-components";
+import { H1, SubH1 } from "./Typography";
 
 const Wrapper = styled.section`
   display: flex;
@@ -37,48 +25,34 @@ const Body = styled.div`
 
 const NoPropsComponent = () => (
   <div>
-    <h6>No props passed to component</h6>
-    <p>Please pass props for this component to function properly.</p>
+    <H1>No props passed to component</H1>
+    <SubH1>Please pass props for this component to function properly.</SubH1>
   </div>
 );
 
-const DefaultHeader = () => <h6>Welcome to Amica</h6>;
+const DefaultHeader = () => <H1>Welcome to Amica</H1>;
 
 const DefaultBody = () => (
-  <p>
+  <SubH1>
     Amica Mutual Insurance Company is a Rhode Island-based mutual insurance
     company that offers auto, home and life insurance. Amica was founded in 1907
     by A.T. Vigneron and originally offered auto, fire and theft insurance.
-  </p>
+  </SubH1>
 );
 
-// ==========================================
-// EXAMPLE USING IF/ELSE
-// ==========================================
-//
-// const PageLayout = ({ header, body }) => {
-//   if (header || body) {
-//     return (
-//       <Wrapper>
-//         {(header && <Header>Page Header</Header>) || <DefaultHeader />}
-//         {(body && <Body>Page Body Content</Body>) || <DefaultBody />}
-//       </Wrapper>
-//     );
-//   } else {
-//     return <NoPropsComponent />;
-//   }
-// };
-
-// ==============================================
-// EXAMPLE USING LOGICAL OPERATORS AND TERNARY
-// (more common practice)
-// ==============================================
-//
 const PageLayout = ({ header, body }) =>
   header || body ? (
     <Wrapper>
-      {(header && <Header>Page Header</Header>) || <DefaultHeader />}
-      {(body && <Body>Page Body Content</Body>) || <DefaultBody />}
+      {(header && (
+        <Header>
+          <H1>{header}</H1>
+        </Header>
+      )) || <DefaultHeader />}
+      {(body && (
+        <Body>
+          <SubH1>{body}</SubH1>
+        </Body>
+      )) || <DefaultBody />}
     </Wrapper>
   ) : (
     <NoPropsComponent />
