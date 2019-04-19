@@ -1,8 +1,3 @@
-// ============================================================
-// 💥TO DO: Change the passed props from boolean to string,
-//          and render the props in the component.
-// ============================================================
-
 import React from "react";
 import styled from "styled-components";
 import { H1, SubH1 } from "./Typography";

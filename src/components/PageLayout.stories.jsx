@@ -1,7 +1,3 @@
-// ====================================================================================
-// 💥TO DO: Update the PageLayout props to pass string values.
-// ====================================================================================
-
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import PageLayout from "./PageLayout";
