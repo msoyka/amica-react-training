@@ -1,6 +1,8 @@
 // ============================================================
 // 💥TO DO: Change the passed props from boolean to string,
 //          and render the props in the component.
+//
+// NOTE: Don't forget to update PageLayout.stories.jsx
 // ============================================================
 
 import React from "react";
@@ -45,12 +47,12 @@ const PageLayout = ({ header, body }) =>
     <Wrapper>
       {(header && (
         <Header>
-          <H1>{header}</H1>
+          <H1>Page Header</H1>
         </Header>
       )) || <DefaultHeader />}
       {(body && (
         <Body>
-          <SubH1>{body}</SubH1>
+          <SubH1>Page Body Content</SubH1>
         </Body>
       )) || <DefaultBody />}
     </Wrapper>
