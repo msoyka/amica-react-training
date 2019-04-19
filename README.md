@@ -76,8 +76,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 **Module 3: React Component Patterns**
 
-- `mod-3-1-start`: Passing props
-- `mod-3-2-start`: Render Props
-- `mod-3-3-start`: Styled components
-- `mod-3-4-start`: Conditional Rendering
-- `mod-2-assignment-start`: Create a reusable Card component using other reusable components.
+- `mod-3-1-start`: Conditional Rendering
+- `mod-3-2-start`: Passing props
+- `mod-3-3-start`: Render Props
+- `mod-3-4-start`: Styled components
+- `mod-3-assignment-start`: Create a reusable Card component using other reusable components.
