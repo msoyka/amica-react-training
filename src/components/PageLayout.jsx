@@ -37,7 +37,8 @@ const Body = styled.div`
 
 const NoPropsComponent = () => (
   <div>
-    <h1>No props passed to component</h1>
+    <h6>No props passed to component</h6>
+    <p>Please pass props for this component to function properly.</p>
   </div>
 );
 
@@ -51,11 +52,36 @@ const DefaultBody = () => (
   </p>
 );
 
-const PageLayout = ({ header, body }) => (
-  <Wrapper>
-    <Header>Page Header</Header>
-    <Body>Page Body Content</Body>
-  </Wrapper>
-);
+// ==========================================
+// EXAMPLE USING IF/ELSE
+// ==========================================
+//
+// const PageLayout = ({ header, body }) => {
+//   if (header || body) {
+//     return (
+//       <Wrapper>
+//         {(header && <Header>Page Header</Header>) || <DefaultHeader />}
+//         {(body && <Body>Page Body Content</Body>) || <DefaultBody />}
+//       </Wrapper>
+//     );
+//   } else {
+//     return <NoPropsComponent />;
+//   }
+// };
+
+// ==============================================
+// EXAMPLE USING LOGICAL OPERATORS AND TERNARY
+// (more common practice)
+// ==============================================
+//
+const PageLayout = ({ header, body }) =>
+  header || body ? (
+    <Wrapper>
+      {(header && <Header>Page Header</Header>) || <DefaultHeader />}
+      {(body && <Body>Page Body Content</Body>) || <DefaultBody />}
+    </Wrapper>
+  ) : (
+    <NoPropsComponent />
+  );
 
 export default PageLayout;
