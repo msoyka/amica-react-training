@@ -43,14 +43,10 @@ const DefaultBody = () => (
 const PageLayout = ({ header, body }) =>
   header || body ? (
     <Wrapper>
-      {(header && (
-        <Header>
-          <H1>{header}</H1>
-        </Header>
-      )) || <DefaultHeader />}
+      {(header && <Header>{header}</Header>) || <DefaultHeader />}
       {(body && (
         <Body>
-          <SubH1>{body}</SubH1>
+          <SubH1>{body()}</SubH1>
         </Body>
       )) || <DefaultBody />}
     </Wrapper>
