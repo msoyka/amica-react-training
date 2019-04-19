@@ -1,3 +1,9 @@
+// =============================================================================
+// 💥TO DO: Update the PageLayout component to only utilize styled-components.
+//
+// NOTES: Remove all React components.
+// =============================================================================
+
 import React from "react";
 import styled from "styled-components";
 import { H1, SubH1 } from "./Typography";
