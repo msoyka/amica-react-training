@@ -1,6 +1,6 @@
 // ============================================================
-// 💥TO DO: Change the passed props from boolean to string,
-//          and render the props in the component.
+// 💥TO DO: Change the passed props from string to React
+//          component, and render the props in the component.
 // ============================================================
 
 import React from "react";
