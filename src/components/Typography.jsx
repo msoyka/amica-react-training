@@ -10,18 +10,15 @@ export const H1 = styled.h1`
   font-weight: 400;
   line-height: 1.33;
   letter-spacing: 0em;
-  color: ${props => (props.primary ? "green" : "palevioletred")};
-  font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : 400)};
+  ${({ marginBottom }) => marginBottom && `margin-bottom: ${marginBottom};`}
+  ${({ marginTop }) => marginTop && `margin-top: ${marginTop};`}
 `;
 
 export const SubH1 = styled.span`
   ${headingStyles}
-  display: block;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.46429em;
-  ${({ borderColor }) =>
-    borderColor && `border-bottom: 1px solid ${borderColor};`}
-  ${({ shadow }) => shadow && `text-shadow: 1px 1px 0 #444;`}
-  letter-spacing: ${({ spacing }) => (spacing ? spacing : "normal")};
+  ${({ marginBottom }) => marginBottom && `margin-bottom: ${marginBottom};`}
+  ${({ marginTop }) => marginTop && `margin-top: ${marginTop};`}
 `;
