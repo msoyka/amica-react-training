@@ -1,3 +1,5 @@
+// To Do: Transform this component to use typescript.
+
 import React from "react";
 import styled from "styled-components";
 
