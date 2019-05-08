@@ -1,7 +1,9 @@
-// To Do: Transform this component to use typescript.
-
 import React from "react";
 import styled from "styled-components";
+
+interface Props {
+  children: React.ReactNode;
+}
 
 const Btn = styled.button`
   padding: 8px 12px;
@@ -18,6 +20,6 @@ const Btn = styled.button`
   }
 `;
 
-const Button = ({ children }) => <Btn type="button">{children}</Btn>;
+const Button = ({ children }: Props) => <Btn type="button">{children}</Btn>;
 
 export default Button;

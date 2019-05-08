@@ -7,6 +7,6 @@ const listItems = [
   { name: "lastname", value: "Wick" }
 ];
 
-storiesOf("InputList", module).add("Default", () => (
+storiesOf("Input List", module).add("Default", () => (
   <InputList type="unordered" listItems={listItems} />
 ));

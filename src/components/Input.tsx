@@ -1,6 +1,23 @@
-import React, { useState } from "react";
+import * as React from "react";
+import { useState } from "react";
 
-const Input = ({ name, value, disabled, readonly, size, maxlength }) => {
+export interface Props {
+  name: string;
+  value: string;
+  disabled?: boolean;
+  readonly?: boolean;
+  size?: number;
+  maxlength?: number;
+}
+
+const Input: React.FC<Props> = ({
+  name,
+  value,
+  disabled,
+  readonly,
+  size,
+  maxlength
+}) => {
   const [inputValue, setInputValue] = useState(value);
   return (
     <input
