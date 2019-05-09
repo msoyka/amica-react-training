@@ -10,7 +10,7 @@ function smartAvatar(Avatar) {
         const response = await fetchGithubAvatar(this.props.githubID);
         this.setState({ avatar: response });
       } catch (error) {
-        console.error("error: ", error);
+        console.error("Error: ", error);
       }
     }
 
