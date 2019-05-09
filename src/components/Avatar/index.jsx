@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import icon from "./avatar.svg";
-import smartAvatar from "./smartAvatar";
+import smartAvatar from "./SmartAvatar";
 
 const Wrapper = styled.figure`
   display: inline-block;
